@@ -1,22 +1,22 @@
+body {
+  background-color: #000;
+  color: azure;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   width: 100%;
-  position: -webkit-sticky;
+  background-color: #333;
+  overflow: hidden;
+  position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
-  overflow: hidden;
-  background-color: #333;
 }
 
 li {
-  border-right: 1px solid #bbb;
   float: left;
-}
-
-li:last-child {
-  border-right: none
 }
 
 li a {
@@ -27,12 +27,15 @@ li a {
   text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
 li a:hover {
   background-color: #111;
 }
 
-.topnav input[type=text] {
+.active {
+  background-color: #4CAF50;
+}
+
+.input[type=text] {
   float: right;
   padding: 6px;
   border: none;
@@ -43,7 +46,7 @@ li a:hover {
 }
 
 @media screen and (max-width: 600px) {
-  .topnav a, .topnav input[type=text], .button {
+  .topnav a, .topnav input[type=text], .topnav button {
     float: none;
     display: block;
     text-align: left;
@@ -59,8 +62,6 @@ li a:hover {
 
 .button {
   border: none;
-  background-color: #333;
-  color: white;
   padding: 14px 32px;
   text-align: center;
   text-decoration: none;
@@ -74,12 +75,7 @@ li a:hover {
   color: azure;
 }
 
-.aligncenter {
+.logo {
   text-align: center;
   margin: 0px 0px;
-  background-color: #333;
-}
-
-.aligncenter img {
-
 }
